@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container for the form -->
+    <div class="form-container">
+        <!-- Close button (X) -->
+        <button class="close-btn" onclick="closeForm()">X</button>
+        <!-- Icon at the top of the form -->
+        <img src="https://flyclipart.com/thumb2/user-icon-png-pnglogocom-133466.png" alt="Icon" class="icon">
+        <!-- Heading for the form -->
+        <h2>Get In Touch</h2>
+        <!-- Form element -->
+        <form action="#" method="POST">
+            <!-- Name input field -->
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <!-- Email input field -->
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <!-- Dropdown selection -->
+            <select id="dropdown" name="dropdown" required>
+                <option value="" disabled selected>About A New Project</option>
+                <option value="Option 1">Create a Webpage</option>
+                <option value="Option 2">Update Portfolio</option>
+                <option value="Option 3">Tailor a Form</option>
+            </select>
+            <!-- Textarea for message input -->
+            <textarea id="message" name="message" rows="4" placeholder="How Can I help?" required></textarea>
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- JavaScript for closing the form -->
+    <script>
+        function closeForm() {
+            // Close the form by removing it from the DOM
+            document.querySelector('.form-container').remove();
+        }
+    </script>
+</body>
+</html>
+

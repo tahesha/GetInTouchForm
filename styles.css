@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2; /* Background color of the page */
+}
+
+/* Styling for the red form container */
+.form-container {
+    background-color: rgba(255, 0, 0, 0.664); /* Background color of the form */
+    color: white; /* Text color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.623);
+    text-align: center;
+    position: relative; /* Position relative for absolute positioning */
+}
+
+
+/* Styling for the form to ensure the name, email, and text field are centered*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align form items horizontally */
+    justify-content: center; /* Center align form items vertically */
+}
+
+/* Styling for the close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px; /*10 did not make this button appear to the right until I added width, height, border-radius, display....*/
+    background: none;
+    border: none;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    /* Button was too big, added more details attributes. */
+    /* padding: 5px;
+    border-radius: 100%; */
+    /*Code above didn't work. Tried again.*/
+    width: 30px; /* Adjusted width */
+    height: 30px; /* Adjusted height */
+    border-radius: 50%; /* Make the button circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the icon */
+.icon {
+    width: 50px; /* Adjust icon size */
+    margin-bottom: 20px;
+}
+
+/* Styling for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    }
+
+
+/* Styling for input fields and textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #add8e6; /* Light blue background color */
+    font-family: inherit; /* Inherit font family from parent */
+    color: #737272; /* Text color */
+    box-shadow: 0 0 10px rgba(17, 11, 29, 0.623);
+}
+
+/* Styling for the submit button */
+button {
+    width: 110%; /*Added 10% to extend the width of the button after adding code for Styling for input fields and textarea */
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* Button background color */
+    color: red; /* Button text color */
+    cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+button:hover {
+    background-color: #3c7ba8; /* Button background color on hover */
+}
+
+
+
+/* Styling for input fields and textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #add8e6; /* Light blue background color */
+    font-family: inherit; /* Inherit font family from parent */
+}
+
+/* Styling for the dropdown */
+select {
+    width: 113%; /* Set the width to 100% to fill the parent container */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #add8e6; /* Light blue background color */
+    font-family: inherit; /* Inherit font family from parent */
+    color: #737272; /* Text color */
+}
+
+/* Although not needed because of code preceding, this is styling for the placeholder text in the dropdown */
+select::placeholder {
+    color: #777; /* Placeholder text color */
+}
